@@ -14,4 +14,4 @@ Read [the article on adding a collaborator](https://help.github.com/articles/add
 
 ## That's it!
 
-Once you've done this let me know. I'll push a test assignment to you and then your onboarding work.
+Once you've done this let me know by emailing me a link to the repository on github.com. I'll push a test assignment to you and then your onboarding work.
