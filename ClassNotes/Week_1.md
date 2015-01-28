@@ -219,6 +219,10 @@ a = 1
 - words separated by underscores
 5. Literals are used to create objects of specific type. `23 is a literal used to create a Fixnum object`
 
+# Purpose of a variable
+- point to a value
+- diff between assigning it to a var and not
+
 # Constants and symbols
 NAME = "Brian"
 puts :myvalue.object_id
@@ -300,3 +304,103 @@ Please create a gist of the final code and paste the url of the gist in an issue
 * Capitalize the user's name
 
 *** END WEEK 1, Tuesday ***
+
+# Difference between group work and single work
+* Will give both, but when its not a group project, everyone should work on their own and not collaborate.
+* It's all about the process
+* You can ask someone a question, which again, should never be a answer with code
+* Some of you that worked together yesterday and collaborated and what should have been a solo project, turned in homework with the exact same wrong answers.
+
+# Convert objects to other objects
+* `"30" + 5` and show variations of converting both sides
+* `Date.parse("2001-09-01")`
+* String to Fixnum (integer): `"123".to_i`
+* Fixnum to String: `1.to_s`
+* Hash to Array: `{channel: 45, network: 'Brighthouse'}.to_a`
+
+# Note: can go from array to vars
+
+a, b, c = [1, 2, 3, 4]
+first, last = ["Brian", "Burridge", "everything else"]
+
+# nil
+* means no object
+* so you know it is not blank, it has no value at all
+* String.new is not nil
+* `"".class` vs `nil.class`
+* important difference
+
+
+# Methods also can be chained
+
+name = "Brian".downcase.reverse.upcase
+
+# Shorthand for incrementing and other math
+
+a += 1
+a -= 1
+a *= 2
+a /= 2
+
+# Gsub
+
+if name.include? "B"
+name.gsub!(/B/, "z")
+else
+puts "Nothing to do here!"
+end
+
+# Split
+* Show splitting: http://www.ruby-doc.org/core-2.1.4/String.html#method-i-split
+
+# Regular Expressions
+* http://lzone.de/Ruby-Regex-Examples
+
+# Using match and captures
+* http://ruby-doc.org/core-2.1.4/MatchData.html
+
+# Extract full name, and both parts... string "name is Doe, John"
+line = "name is Doe, John"
+if result = line.match(/name is ((\w+), (\w+))/)
+fullname, firstname, lastname = result.captures
+end
+
+# Loops, iterators, blocks
+* See my sample code from class
+
+# Assignment 8
+* [Read](https://www.bluebox.net/insight/blog-article/using-regular-expressions-in-ruby-part-1-of-3)
+* [Review](http://lzone.de/Ruby-Regex-Examples)
+* [Play](http://rubular.com/)
+* Write a Ruby script to do the following:
+
+* Take the string "Hello World" and split it on whitespace. Show two ways to do this.
+* Use the Peter Piper tongue twister and split it on 'pick'
+* Use gsub only to change the first passage to the second in the fewest amount of commands:
+
+Original: "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And YOU are the one who'll decide where to go..."
+
+Result: "I have brains in my head. I have feet in my shoes. I can steer myself any direction I choose. I'm on my own. And I know what I know. And I'M the one who'll decide where to go..."
+
+* Write code to determine how many times 'sh' occurs in the following phrase:
+
+There once was a man who had a sister, his name was Mr. Fister. Mr. Fister's sister sold sea shells by the sea shore. Mr. Fister didn't sell sea shells, he sold silk sheets. Mr. Fister told his sister that he sold six silk sheets to six shieks. The sister of Mr. Fister said I sold six shells to six shieks too!
+
+* In the same phrase above, how many times does 'sh' occur when followed by an 'o'? Show the code.
+* Match the word `foot` but not `football` in this phrase: "He played football despite having an artificial foot.""
+* Match the last `sits` in a phrase using this phrase: "I saw Susie sitting in a shoe shine shop. Where she sits she shines, and where she shines she sits."
+
+# Assignment 9
+* Take a string from the user, reverse it, remove the last character and reverse it again (no shortcuts)
+* Be sure if the user enters whitespace on either side of the input, that you remove it first
+* For the original text input by the user, count how many words (as separated by spaces) and print this count.
+
+# Assignment 10
+* Request input of a number from the user.
+* Iterate the number of times indicated by the input number
+* Within the loop, print the number of the iteration
+* Do this for each of these methods of looping: while, for i in range, loop, until, .times with counter, range with each
+* All should print from 1 to the number input by the user
+
+
+*** END WEEK 1, Wednesday ***
