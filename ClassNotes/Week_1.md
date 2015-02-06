@@ -145,7 +145,7 @@
 * [Read Chapter 1 of the Git book. Sections 1.1 through 1.4 ](http://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 * Finish [try.github.io](https://try.github.io/) if you didn't finish it for the prework.
 
-** END Monday / Week 1 **
+#### _End week 1 / Monday_
 
 # Show marking an issue 'completed'
 * Ensure everyone's repos are doing the callback
@@ -162,9 +162,10 @@
 * For all applications, we need to get data into the app, and then return data. There are many ways to do this. With command line Ruby we use `puts` (put string) or `print` and `gets` (get string).
 * Demonstrate the difference between `puts` and `print`
 
-3.times { print "Hello!" }
 
-3.times { puts "Hello!" }
+    3.times { print "Hello!" }
+
+    3.times { puts "Hello!" }
 
 * Create a Hello World ruby file
 * Show the puts and print statement with Hello World
@@ -187,13 +188,16 @@
 * && ||
 * & |
 * (differences between the two)
-a = 1
-(1 != 1) && (a=2)
-(1 != 1) & (a=2)
+
+    a = 1
+    (1 != 1) && (a=2)
+    (1 != 1) & (a=2)
 
 # Evaluating using parenthesis
 * things inside are evaluated first
-* `puts (4 * 2) + (6/3)`
+
+
+    puts (4 * 2) + (6/3)
 
 # Everything in Ruby is an Object
 * `"Hello World".class` is a Ruby object of class type String
@@ -224,11 +228,13 @@ a = 1
 - diff between assigning it to a var and not
 
 # Constants and symbols
-NAME = "Brian"
-puts :myvalue.object_id
-puts :myvalue.object_id
-puts "myvalue".object_id
-puts "myvalue".object_id
+
+
+    NAME = "Brian"
+    puts :myvalue.object_id
+    puts :myvalue.object_id
+    puts "myvalue".object_id
+    puts "myvalue".object_id
 
 ## A symbol is a way to pass string information, always assuming that:
 
@@ -241,15 +247,15 @@ puts "myvalue".object_id
 # Assignment 4
 Use the following code to create a Ruby file and run it. The file can be run either by `ruby filename` or, if you choose, you can set the executable bit (`chmod +x filename`) and add a shebang.
 
-puts 3 > 4
-puts (3 * 2) > 10
-puts 2 == 3
-puts (1 > 0) && (2 <= 1)
-puts 2 != 2
-puts (14 <= 10) || (2 >= 3)
-puts 10 % 2 == 1
-puts (10 ** 2) == 1000
-puts 1000 / 300 > 4
+    puts 3 > 4
+    puts (3 * 2) > 10
+    puts 2 == 3
+    puts (1 > 0) && (2 <= 1)
+    puts 2 != 2
+    puts (14 <= 10) || (2 >= 3)
+    puts 10 % 2 == 1
+    puts (10 ** 2) == 1000
+    puts 1000 / 300 > 4
 
 Now change the code above so that when you run it, all the equations are true.
 
@@ -303,7 +309,7 @@ Please create a gist of the final code and paste the url of the gist in an issue
 * Change the output formatting to: Friday, April 1, 1974
 * Capitalize the user's name
 
-*** END WEEK 1, Tuesday ***
+#### _End week 1 / Tuesday_
 
 # Difference between group work and single work
 * Will give both, but when its not a group project, everyone should work on their own and not collaborate.
@@ -320,8 +326,8 @@ Please create a gist of the final code and paste the url of the gist in an issue
 
 # Note: can go from array to vars
 
-a, b, c = [1, 2, 3, 4]
-first, last = ["Brian", "Burridge", "everything else"]
+    a, b, c = [1, 2, 3, 4]
+    first, last = ["Brian", "Burridge", "everything else"]
 
 # nil
 * means no object
@@ -333,22 +339,22 @@ first, last = ["Brian", "Burridge", "everything else"]
 
 # Methods also can be chained
 
-name = "Brian".downcase.reverse.upcase
+    name = "Brian".downcase.reverse.upcase
 
 # Shorthand for incrementing and other math
 
-a += 1
-a -= 1
-a *= 2
-a /= 2
+    a += 1
+    a -= 1
+    a *= 2
+    a /= 2
 
 # Gsub
 
-if name.include? "B"
-name.gsub!(/B/, "z")
-else
-puts "Nothing to do here!"
-end
+    if name.include? "B"
+      name.gsub!(/B/, "z")
+    else
+      puts "Nothing to do here!"
+    end
 
 # Split
 * Show splitting: http://www.ruby-doc.org/core-2.1.4/String.html#method-i-split
@@ -360,10 +366,12 @@ end
 * http://ruby-doc.org/core-2.1.4/MatchData.html
 
 # Extract full name, and both parts... string "name is Doe, John"
-line = "name is Doe, John"
-if result = line.match(/name is ((\w+), (\w+))/)
-fullname, firstname, lastname = result.captures
-end
+
+
+    line = "name is Doe, John"
+    if result = line.match(/name is ((\w+), (\w+))/)
+      fullname, firstname, lastname = result.captures
+    end
 
 # Loops, iterators, blocks
 * See my sample code from class
@@ -402,5 +410,124 @@ There once was a man who had a sister, his name was Mr. Fister. Mr. Fister's sis
 * Do this for each of these methods of looping: while, for i in range, loop, until, .times with counter, range with each
 * All should print from 1 to the number input by the user
 
+#### _End week 1 / Wednesday_
 
-*** END WEEK 1, Wednesday ***
+# Why classes and OO?
+* a class is a definition of a type of thing; tells Ruby what that type of object should look like
+* classes start with an uppercase letter
+* objects are "instances" of a class
+* for code maintainability
+* code reuse
+* encapsulation
+* Date and String are examples of classes that provide encapsulated functionality for reuse
+* Allows us to group attributes and functionality with the objects they are modeling or functioning on
+* Is much more like the real world. A car has an axel count, a mpg count, and can start, drive, reverse, shut off.
+
+# Difference between a class and an object, or, a class and an instance of a class
+* Diagram on board: Person, Car, Company
+
+# Discuss using class methods vs instance methods
+* Class methods are used to instantiate some objects. Example:
+
+
+    String.new
+    Date.new
+    Date.parse
+    Date.today
+    Hash.new
+    Array.new
+
+* Instance methods are executed against an instance; the object. They have access to the attributes of the object. Example:
+
+
+    "Hello World".split
+    Date.today.year # understand why year is an instance method?
+
+* Show Class methods in docs vs Instance methods: http://ruby-doc.org/stdlib-2.0/libdoc/date/rdoc/Date.html
+
+
+# Encapsulation and Reuse
+* DRY - Do not Repeat yourself (code reuse)
+* When you hear someone say they are going to "DRY" up their code, this is what they mean.
+* Any time you see a solution repeated it's time to consolidate it into one place and then reuse it.
+* methods, helpers, libraries
+* Show a method in IRB:
+
+
+    def hello_world
+      puts "Hello World"
+    end
+
+* Can now call hello_world over and over
+
+
+    def hello(name)
+      puts "Hello #{name}"
+    end
+
+    hello('Brian') or hello 'Brian'
+
+# defaults
+
+    def hello(name = 'World')
+      puts "Hello #{name}"
+    end
+
+# World is now the default
+
+    hello('Brian') or hello
+
+# Defining a class
+* Use the `class` keyword
+* Save in a separate file
+
+
+    class Speak
+
+      def self.hello(name = 'World')
+        puts "Hello #{name}"
+      end
+
+      def self.farewell
+        puts "See ya!"
+      end
+    end
+
+* use `load 'speak.rb'` to load a class into IRB
+
+# Paper exercise in class
+* Everyone gets paper and pencil
+* Write a class on paper to define a Robot
+* Put the end way near the bottom so there is room
+* Define a method to move foreward
+* Pass it to the person on your right
+* This developer, on the back, should instantiate a Robot object and then call move forward on that object.
+* If you are unable to because the original developer didn't create it properly for you to do so, hand it back them and tell them why you can't.
+* Now hand it back to the original dev
+* Add a method to move backward
+* continue...
+
+# Assignment 11
+* Read [Ruby styleguide](https://github.com/styleguide/ruby">https://github.com/styleguide/ruby)
+* All homework assignments must now comply to the ruby style guide
+
+# Assignment 12
+* Create an array of questions (Strings)
+* Iterate over the array using each, asking each question to the user
+* Bonus: Save all the answers with the questions, and print a summary at the end
+
+# Assignment 13
+* Create a guessing game
+* The user must guess the number chosen by the app
+* Provide feedback to the user as to if their guess is lower or higher than the number
+* Count the number of guesses and output at the end
+
+# Assignment 14
+* Using the structure of a class as I've laid out in this [gist](https://gist.github.com/brianburridge/7e98d358dee03c6b6060), finishing creating the PigLatin class to translate a word into pig latin
+* Bonus: modify the app to convert an entire phrase (one word at a time)
+* Note the pig latin rules in the comment of the skeleton app
+
+#### _End week 1 / Thursday_
+
+
+#### _END WEEK 1_
