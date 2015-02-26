@@ -76,7 +76,8 @@ https://gist.github.com/brianburridge/1cbf637b1c5120273b6b
 
 # Annotate models gem
 * https://github.com/ctran/annotate_models
-* rails g annotate:install
+* Install the gem and bundle
+* Optionally, generate a config file to change annotation settings: `rails g annotate:install`
 
 # Generate a scaffold
 * what is a scaffold?
