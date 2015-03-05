@@ -180,7 +180,7 @@
 44. If we get this message in our log after attempting to save an object, what does it mean?
 
 
-      Unpermitted parameters: first_name
+        Unpermitted parameters: first_name
 
 
 45. What one question do you wish I would have asked?
