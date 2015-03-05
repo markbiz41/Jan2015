@@ -84,21 +84,14 @@
 
 
 
-22. If your app gave you this error message:
+22. If your app gave you the following error message, on this line of code, what would it indicate?
 
 
-      undefined method `downcase' for nil:NilClass
+        undefined method `downcase' for nil:NilClass
 
 
+        <%= user.name.downcase %>
 
-on this line of code:
-
-
-      <%= user.name.downcase %>
-
-
-
-what would it indicate?
 
 
 23. What gem did we use to paginate our Collections?
