@@ -18,12 +18,14 @@
 
 User Name: The Iron Yard
 
+```
 ===== LICENSE BEGIN =====
 664519-12052014
 00000Y0oG1403P"YAs0Fzu5rce9S"D
 FJGt2JrkDchl1hitYrPaeoMojvk825
 PqcR4X9aubaeovP4rCqnPDbb9iLP"Y
 ===== LICENSE END =====
+```
 
 * Add _.idea_ to all your .gitignore files to not check in all the workspace files or they will conflict with other developers.
 
