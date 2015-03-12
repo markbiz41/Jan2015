@@ -1,213 +1,121 @@
 # Half Way Challenge
 
-1. What is a class?
+1. What is a class? A class is a recipe or model of an object that starts with a capital letter.
 
-A class is a template which describes some singular concept of data and it's characteristics, and provides functionality via methods, that can be performed on that data.
+2. What is an attribute? An attribute holds data and is part of a class.
 
-2. What is an attribute?
+3. What is an object? An object is a instance of a class.
 
-Loved Diana's answer: "Attributes are the characteristics of members of a class." Maybe slightly improved, "Attributes are the characteristics of instances of a class."
+4. What type of object is a PORO? Plain old Ruby object.
 
-3. What is an object?
+5. What is a Rails model? A Rails model shows the relationship between different classes and functionality.
+Model the data our applications is going to use.
 
-Simply put, it's an instance of a class, with a combination of variables, functions, and data structures.
-
-4. What type of object is a PORO?
-
-Plain Old Ruby Object (this is as opposed to a Rails model).
-
-
-5. What is a Rails model?
-
-A Rails model, is a regular class extended by ActiveRecord, that is specifically used to model the data portion of our application. Versus other classes that are used for all types of functionality and data structures (controllers, migrations, initializers, etc) , models "model" the data we will be manipulating and persisting in our application.
-
-6. What is your absolute favorite meal?
-
-Pancakes/waffles, bacon and eggs
+6. What is your absolute favorite meal? Chicken Parmesan with spaghetti.
 
 7. What is the difference between a locally scoped variable and an instance variable?
+All variables have scope (4 variables) within the class itself.  Local variables are only used in the block of code or method.
 
-All variables have scope. They can be global, local, class, or instance. Difference is accessibility. Local can only be used with the block they are created in. Global are used throughout the entire app. Class are used within the class itself, and instance within a specific object.
+8. Why do we use version control like git? Version Control allows developers to see past code they have submitted as well as present code incase variations have to be made.
 
-8. Why do we use version control like git?
+9. What is the difference between git and GitHub? Git is software where you can create a new coding project and show a history of changes you made to the code.  Github allows you to share your project with other collaborators.  You can pull in requests from other software developers if you like their code.  Also, you can push your code to Github, where you and other software developers can see your code.
 
-To track the various versions of our code, providing a change log both for historical purposes and to retrieve past versions when necessary.
-
-
-9. What is the difference between git and GitHub?
-
-GitHub is a remote git server. A remote git server allows us to push our code to a central location, so other developers can share it.
-
-10. What is your ideal vacation?
-
-Staying by the water (ocean, lake, stream), reading, writing, and thinking.
+10. What is your ideal vacation? My ideal vacation would be on a Caribbean Island and swimming in clear blue waters.
 
 11. What does the pattern of Separation of Concerns mean and why do we use it?
+Seperation of Concerns is simplifying the development process of software.  By breaking up a software project into various parts makes it easy to program.
 
-Separating roles in an application so distinct parts have their own responsibilities.
+12. What does the pattern MVC mean? Model, View, Controller.
 
-12. What does the pattern MVC mean?
+13. What is the difference between a Rails model and a database table? A Database Table organizes your data by common characteristics.  A Rails Model can add data, find data, update data and remove data.
 
-Model - View - Controller. It is one solution to SoC.
+14. How do we modify the database for our Rails app? Use database.yml
 
-13. What is the difference between a Rails model and a database table? What is their relationship?
+15.What do you do to relax?  I like to go to the gym and run on the threadmill.
 
-A Rails model is the class used to create object which store the data. Those objects can be saved, or persisted, to a database table that backs the model.
+16. What is a gem and how do we use them in our Rails apps? A Gem provides software procedures in which we don't have to write additional code to our Rails apps.
 
-A model doesn't represent a table. More the table provides a storage mechanism for the model. Is generally backed by a table, but, could be backed by an API or other storage as well.
+17. In what part of a Rails application do we tell it how to handle an HTTP request to a specific path, like: http://localhost:3000/movies? Routes.
 
+18. In what part of a Rails application do we hold data provided by the user, in order to use it, save it to the database, or retrieve it from the database? The Model
 
-14. How do we modify the database for our Rails app?
+19. In what part of a Rails application do we render data, in HTML, to present to the user? The View part of Rails.
 
-Migrations
+20. What TV show do you never want to miss?  Breaking Bad.
 
+21. What part of a Rails application processes actions, uses models, and directs flow to the proper view? Controller
 
-15. What do you do to relax?
+22. If your app gave you the following error message, on this line of code, what would it indicate? The error message would indicate their is no 'name' class to downcase to.
 
-Watch a movie or TV, read a book, take a walk, or workout at the gym.
-
-16. What is a gem and how do we use them in our Rails apps?
-
-Gem's are libraries of functionality we can use to extend our Rails apps without writing custom code ourselves.
-
-17. In what part of a Rails application do we tell it how to handle an HTTP request to a specific path, like: `http://localhost:3000/movies`?
-
-routes
-
-18. In what part of a Rails application do we hold data provided by the user, in order to use it, save it to the database, or retrieve it from the database?
-
-model
-
-19. In what part of a Rails application do we render data, in HTML, to present to the user?
-
-view
-
-20. What TV show do you never want to miss?
-
-Walking Dead.
-
-21. What part of a Rails application processes actions, uses models, and directs flow to the proper view?
-
-controller
-
-22. If your app gave you the following error message, on this line of code, what would it indicate?
+undefined method `downcase' for nil:NilClass
 
 
-        undefined method `downcase' for nil:NilClass
+<%= user.name.downcase %>
 
+23. What gem did we use to paginate our Collections? Kaminari
 
-        <%= user.name.downcase %>
+24. What gem did we use to provide upload functionality? The gem we used is called Carrierwave
 
-the name METHOD is nil
+25. What is your favorite musical artist or group? Aerosmith.
 
-(any questions as to why name is a method?)
+26. What technology do we use to style HTML in the browser? CSS.
 
-23. What gem did we use to paginate our Collections?
+27. What type of view templates have we been using in our class to create dynamic HTML? .erb or HAML
 
-kaminari
+28. What type of helpers do we use to check data against certain rules and requirements before it is saved to our database? Validation Helpers
 
-24. What gem did we use to provide upload functionality?
+29. What are model associations? Model Associations is when a model can belong to another model.
+They show how model relates to each other.
 
-Carrierwave
-
-25. What is your favorite musical artist or group?
-
-Skillet
-
-26. What technology do we use to style HTML in the browser?
-
-CSS
-
-27. What type of view templates have we been using in our class to create dynamic HTML?
-
-This one confused everyone. I was looking for an answer of _erb_.
-
-28. What type of helpers do we use to check data against certain rules and requirements before it is saved to our database?
-
-validations
-
-29. What are model associations?
-
-they show how models relate to each other: belongs to, has many, has one, etc
-
-30. Based on the name, if The Iron Yard wasn't a code school, what else might it be?
-
-gym
+30. Based on the name, if The Iron Yard wasn't a code school, what else might it be? A junk yard.
 
 31. What code would you use to find the a User record in the database with an id of 17?
 
+User.find(1)
 
-User.find(17)
-User.find_by(id: 17)
+32. If you want to use an image inside your app, in what directory do you put it? app, assets, images.
 
-32. If you want to use an image inside your app, in what directory do you put it?
+33. What helper do you use to create a form to edit or create a specific resource? A Form Helper.
 
-app/assets/images
+34. What does this mean? ||= means memoization which remembers the results of some specific inputs of data.
 
-33. What helper do you use to create a form to edit or create a specific resource?
+35. What is your nickname? If you don't have one, what do you wish it was?  My nickname would be 'berg'.
 
-form_for
+36. What is a scope? Please provide one example.  Scope allows us retrieval of a specific class.  An example would be:
 
-34. What does this mean? `||=`
+class Article
+  scope :published
 
-memoization
 
-35. What is your nickname? If you don't have one, what do you wish it was?
-
-Brian Norbage (but not since I was little, and I accidentally gave it to myself)
-
-36. What is a scope? Please provide one example.
-
-scope allows us to filter, or narrow down, our retrieval of a collection of objects for a specific class
-
-scope :active, -> {where(active: true)}
-
-37. What is _rake_? Give some examples of how and when we use it?
-
-Rake is a tool, written in Ruby, which we can use to perform operations on our Rails app and it's environment.
+37. What is rake? Give some examples of how and when we use it? Rake allows you to use Ruby code in the command line.  An example would be:
+rake db: migrate
 
 38. How do you deploy your app to Heroku?
+git push heroku master
+heroku open
+heroku rake db:migrate
+heroku restatrt
 
-`git push heroku master`
+39. What gem can we use to provide a fast, yet custom and robust, administrative section for our apps? gem 'activeadmin'
 
-All the other parts of your answers were how to set an app up to enable deployment, but this command is all that's needed to do the deploy.
+40. What is does anopisthographic mean? The practice of writing on one side only.
 
-39. What gem can we use to provide a fast, yet custom and robust, administrative section for our apps?
+41. If a User has many ParkingTickets, and the user variable points to a User object, what code would you use to get all the ParkingTickets?
 
-ActiveAdmin
+user.parking_tickets
 
-40. What is does _anopisthographic_ mean?
+42. If an Address model has a postal code attribute, what code would you use to get all Addresses from the database with a postal code of 33771?
 
-a page with writing on one side
-
-41. If a User has many ParkingTickets, and the `user` variable points to a User object, what code would you use to get all the ParkingTickets?
-
-
-For some reason almost everyone put `user.parkingtickets.all`
-
-I'm sure I've never put `.all` after an association before. Where did everyone see this?
-
-Also, since ParkingTicket is two words it would be `user.parking_tickets`
-
-42. If an Address model has a postal code attribute, what code would you use to get all Addresses from the database with a postal code of _33771_?
-
-`Address.where(postal_code: 33771)`
-
-If I did this instead, what would be different about the data loaded?
-
-`Address.find_by(postal_code: 33771)`
-
+Address.where(postal_code: 33771)
 
 43. How do you create a new Book object in the database, if a Book class has the following required attributes: title, author, publish_year, pages?
 
-Book.create(title: "Casino Royale", author: "Ian Fleming", publish_year: 1953, pages: 250)
+Book.create(title:string author:string published_year:date pages:integer)
 
 44. If we get this message in our log after attempting to save an object, what does it mean?
 
+Unpermitted parameters: first_name
 
-        Unpermitted parameters: first_name
+The error message means first_name that cannot be saved to a form.
 
-We forgot to white list the attribute `first_name`.
-
-
-45. What one question do you wish I would have asked?
+45. What one question do you wish I would have asked? No more. This is enough already.
